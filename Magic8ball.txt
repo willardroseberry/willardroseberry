@@ -1,0 +1,90 @@
+package com.JavaDevelamentWillard;
+import java.lang.Math;
+public class Main {
+
+    public static void main(String[] args) {
+
+        String [] magicBallSaying ={"It is certain", "As I see it, yes.", "Reply hazy, try again", "Don't count on it.", "It is decidedly so.", "Most likely.",
+                "Ask again later", "My reply is no", "Without a doubt", "Outlook good", "Better not tell you now", "My sources say no", "Yes definitely",
+                 "Yes", "Cannot predict now", "Outlook not so good", "You may rely on it", "Signs point to yes", "Concentrate and ask again", "Very doubtful"};
+
+          double randomNumber = randomNumberGenerator();
+
+          int number = (int)randomNumber;
+
+     switch (number){
+         case 1: System.out.println(magicBallSaying[0]);
+            break;
+         case 2:
+             System.out.println(magicBallSaying[1]);
+             break;
+         case 3:
+             System.out.println(magicBallSaying[2]);
+             break;
+         case 4:
+             System.out.println(magicBallSaying[3]);
+             break;
+         case 5:
+             System.out.println(magicBallSaying[4]);
+             break;
+         case 6:
+             System.out.println(magicBallSaying[5]);
+             break;
+         case 7:
+             System.out.println(magicBallSaying[6]);
+             break;
+         case  8:
+             System.out.println(magicBallSaying[7]);
+             break;
+         case 9:
+             System.out.println(magicBallSaying[8]);
+             break;
+         case 10:
+             System.out.println(magicBallSaying[9]);
+             break;
+         case 11:
+             System.out.println(magicBallSaying[10]);
+             break;
+         case 13:
+             System.out.println(magicBallSaying[11]);
+             break;
+         case 14:
+             System.out.println(magicBallSaying[12]);
+             break;
+         case 15:
+             System.out.println(magicBallSaying[13]);
+             break;
+         case 16:
+             System.out.println(magicBallSaying[14]);
+             break;
+         case 17:
+             System.out.println(magicBallSaying[15]);
+             break;
+         case 18:
+             System.out.println(magicBallSaying[16]);
+             break;
+         case 19:
+             System.out.println(magicBallSaying[17]);
+             break;
+         case 20:
+             System.out.println(magicBallSaying[18]);
+             break;
+         case 12:
+             System.out.println(magicBallSaying[19]);
+             break;
+         default:
+
+     }
+    }
+     /**
+       Generating a random number from 1 to 20
+      */
+    public static double randomNumberGenerator(){
+        double randomNumber;
+        double numMin = 1.00;
+        double numMax = 20.00;
+        randomNumber = Math.floor(Math.random() * (numMax - numMin + 1) + numMin);
+        return  randomNumber;
+    }
+
+}
